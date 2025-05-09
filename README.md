@@ -1,38 +1,120 @@
-# Art Director Portfolio
+# Modern Portfolio Website
 
-A modern, minimalist portfolio website for an art director, built with Next.js.
+A modern, interactive portfolio website built with Next.js 14, featuring smooth animations, custom cursor effects, and responsive design.
 
-## Image Setup
+## 🌟 Features
 
-The portfolio is designed to use 5 specific images that need to be saved to the `/public/images/portfolio/` directory:
+- **Modern UI/UX**: Sleek and contemporary design with smooth transitions
+- **Custom Animations**:
+  - Magnetic elements
+  - Text reveal effects
+  - Parallax sections
+  - Custom cursor
+  - Gooey effects
+- **Responsive Design**: Fully responsive across all devices
+- **Performance Optimized**: Built with Next.js 14 for optimal performance
+- **Smooth Scrolling**: Implemented using Lenis for butter-smooth page scrolling
+- **Dynamic Pages**:
+  - Home
+  - About
+  - Portfolio
+  - Show Reel
+  - Contact
+  - Book Online (with calendar integration)
+- **GSAP Animations**: Advanced animations using GSAP
+- **TypeScript**: Built with type safety using TypeScript
 
-1. `image1.jpg` - Blue silhouette in field
-2. `image2.jpg` - Person in field at sunset
-3. `image3.jpg` - Person with camera in city
-4. `image4.jpg` - Person at desk with window
-5. `image5.jpg` - Person in chair with light
+## 🛠️ Tech Stack
 
-Please save these images with the exact filenames listed above.
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: SCSS Modules
+- **Animation Libraries**:
+  - GSAP
+  - Framer Motion
+  - Shery.js
+  - Lenis
+- **Other Tools**:
+  - ESLint
+  - Raw Loader
 
-## Development
+## 📁 Project Structure
 
-```bash
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
+```
+├── public/
+│   └── images/           # Static images and media files
+├── src/
+│   ├── app/             # Next.js 14 app router pages
+│   ├── components/      # Reusable components
+│   │   ├── layout/     # Layout components (Navbar, Footer)
+│   │   └── ui/         # UI components
+│   ├── data/           # Static data and configurations
+│   └── types/          # TypeScript type definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+## 🚀 Getting Started
 
-## Project Structure
+1. Clone the repository:
 
-- `/src/data/data.ts` - Contains all static content for the website
-- `/src/app/` - Next.js app directory with page components
-- `/src/components/` - Reusable UI components
-- `/public/images/` - Static images used throughout the site
+   ```bash
+   git clone [your-repo-url]
+   ```
 
-## Deployment
+2. Install dependencies:
 
-This project is configured for easy deployment to Vercel.
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📦 Deployment on Vercel
+
+1. Push your code to GitHub
+2. Visit [Vercel](https://vercel.com)
+3. Import your GitHub repository
+4. Configure your project settings:
+   - Framework Preset: Next.js
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+5. Click "Deploy"
+
+## 🎨 Key Components
+
+- **CustomCursor**: Implements a custom cursor with magnetic effect
+- **MagneticElement**: Creates magnetic hover effects on elements
+- **ParallaxSection**: Handles parallax scrolling effects
+- **TextReveal**: Animated text reveal effects
+- **TiltCard**: Interactive tilting card components
+- **GooeyEffect**: Implements liquid-like animations
+- **SmoothScroll**: Handles smooth scrolling using Lenis
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and optimized for:
+
+- Desktop (1200px+)
+- Laptop (1024px)
+- Tablet (768px)
+- Mobile (480px)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is MIT licensed.
