@@ -1,0 +1,229 @@
+.aboutPage {
+  padding: 8rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 4rem 0;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .imageSection {
+    .imageContainer {
+      width: 100%;
+      height: 600px;
+      position: relative;
+    }
+  }
+
+  .bioSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .bio {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      color: #333;
+      font-weight: 300;
+      
+      @media (max-width: 768px) {
+        padding: 0 0.8rem; /* Small margin on mobile */
+      }
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      
+      .statItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .statValue {
+          font-size: 3rem;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+        }
+        
+        .statLabel {
+          font-size: 0.9rem;
+          color: #666;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  .skillsSection {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+  }
+  
+  .skillsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    position: relative;
+    
+    span {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      color: #333;
+      padding: 0 2rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    
+    .skillsHeaderLine {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.05) 100%);
+      flex: 1;
+      max-width: 200px;
+    }
+  }
+  
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3.5rem; /* Increased gap between cards */
+    margin-bottom: -10rem;
+    padding: 0 1rem; /* Added padding on all devices */
+    
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2.5rem; /* Increased gap on mobile */
+      padding: 0 0rem; /* Increased side margins on mobile */
+    }
+    
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .skillCard {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 280px;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+    
+    @media (max-width: 768px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: linear-gradient(to bottom, #333, #000);
+      transition: height 0.5s ease;
+    }
+    
+    &:hover:before {
+      height: 100%;
+    }
+  }
+  
+  .skillCardInner {
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+  
+  .skillNumber {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .skillTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #222;
+    position: relative;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -0.75rem;
+      left: 0;
+      width: 2rem;
+      height: 1px;
+      background-color: #ddd;
+      transition: width 0.3s ease;
+    }
+  }
+  
+  .skillDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    flex: 1;
+  }
+  
+  .skillIcon {
+    margin-top: auto;
+    align-self: flex-start;
+    color: #999;
+    transition: color 0.3s ease;
+    
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  .skillCard:hover {
+    .skillTitle {
+      &:after {
+        width: 3rem;
+        background-color: #333;
+      }
+    }
+    
+    .skillIcon {
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.textReveal {
+  overflow: hidden;
+  display: inline-block;
+  white-space: normal;
+  width: 100%;
+}
+
+.word {
+  display: inline-block;
+  overflow: hidden;
+  transform-origin: bottom left;
+  margin-right: 0.25rem;
+}

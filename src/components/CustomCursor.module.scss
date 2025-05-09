@@ -1,0 +1,51 @@
+.cursorDot {
+  position: fixed;
+  left: -4px; // Offset to center the dot
+  top: -4px;  // Offset to center the dot
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  
+  @media (max-width: 768px) {
+    display: none; // Hide on mobile/touch devices
+  }
+}
+
+// Cursor ring
+.cursorRing {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  left: -22.5px;
+  top: -22.5px;
+  border-width: 2.1px;
+  border: 1px solid rgba(150, 150, 150, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: difference;
+  
+  &.link {
+    width: 45px;
+    height: 45px;
+    left: -22.5px;
+    top: -22.5px;
+    border-width: 2.1px;
+  }
+  
+  &.text {
+    width: 45px;
+    height: 45px;
+    left: -22.5px;
+    top: -22.5px;
+    border-width: 2.1px;
+  }
+  
+  @media (max-width: 768px) {
+    display: none; // Hide on mobile/touch devices
+  }
+}

@@ -1,0 +1,640 @@
+.bookingCalendarPage {
+  padding: 8rem 0 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @media (max-width: 768px) {
+    padding: 6rem 1rem 3rem;
+  }
+  
+  .pageTitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .pageSubtitle {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .bookingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+  
+  .calendarSection {
+    border-right: 1px solid #eee;
+    padding-right: 2rem;
+    max-width: 500px;
+    
+    @media (max-width: 1024px) {
+      border-right: none;
+      padding-right: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      max-width: 100%;
+      margin: 0 auto 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 1rem 2rem;
+    }
+  }
+  
+  .calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0;
+    }
+    
+    .timeZoneInfo {
+      font-size: 0.8rem;
+      color: #666;
+    }
+  }
+  
+  .calendarWrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  .monthNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .currentMonth {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    .monthNavButton {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3rem;
+      color: #333;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        color: #000;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  .calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    @media (max-width: 480px) {
+      gap: 0.15rem;
+      max-width: 100%;
+    }
+    
+    .weekdayHeader {
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.3rem 0;
+      color: #666;
+    }
+    
+    .calendarDay {
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      padding: 0.3rem;
+      
+      @media (max-width: 480px) {
+        padding: 0.2rem;
+      }
+      
+      .dayNumber {
+        font-size: 0.85rem;
+        font-weight: 400;
+      }
+      
+      .availabilityDot {
+        width: 3px;
+        height: 3px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-top: 2px;
+      }
+      
+      &.emptyDay {
+        pointer-events: none;
+      }
+      
+      &.unavailableDay {
+        color: #ccc;
+        pointer-events: none;
+      }
+      
+      &.availableDay {
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+      
+      &.selectedDay {
+        background-color: #000;
+        color: #fff;
+        
+        .availabilityDot {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  
+  .timeSelection {
+    margin-top: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (max-width: 480px) {
+      max-width: 100%;
+      padding: 0 0.5rem;
+    }
+    
+    .timeSelectionHeader {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+    
+    .timeSlotGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @media (max-width: 480px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .timeSlot {
+      padding: 0.5rem 0.5rem;
+      background-color: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background-color: #f0f0f0;
+        border-color: #ddd;
+      }
+    }
+    
+    .showAllSessions {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      background: transparent;
+      border: 1px solid #ddd;
+      color: #666;
+      font-size: 0.8rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+      
+      &:hover {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+    }
+  }
+  
+  .serviceDetails {
+    width: 100%;
+    max-width: 800px;
+    
+    @media (max-width: 1024px) {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+      
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    
+    .serviceCard {
+      background-color: #f9f9f9;
+      padding: 0rem;
+      border-radius: 4px;
+      
+      @media (max-width: 768px) {
+        padding: 0rem;
+      }
+      
+      @media (max-width: 480px) {
+        padding: 0rem;
+      }
+      
+      h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+      }
+      
+      .serviceInfo {
+        margin-bottom: 2rem;
+        
+        p {
+          margin: 0.8rem 0;
+          color: #666;
+          font-size: 1rem;
+          
+          &.selectedDateTime {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+      
+      .nextButton {
+        width: 100%;
+        padding: 1rem;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background-color: #333;
+        }
+        
+        &:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  
+  .detailsSection {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+    @media (max-width: 768px) {
+      padding: 0 1.5rem;
+    }
+    
+    @media (max-width: 480px) {
+      padding: 0 1rem;
+    }
+  }
+  
+  .bookingFormTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    color: #333;
+    
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .bookingForm {
+    width: 100%;
+  }
+  
+  .formColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  .columnTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+  
+  .accountSection {
+    margin-bottom: 2rem;
+    
+    p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    
+    .loginLink {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: 500;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .nameFields, .contactFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .required {
+      color: #e53e3e;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #333;
+      
+      @media (max-width: 768px) {
+        padding: 0.8rem 0.9rem;
+        font-size: 0.95rem;
+      }
+      
+      @media (max-width: 480px) {
+        padding: 0.7rem 0.8rem;
+      }
+      
+      &::placeholder {
+        color: #aaa;
+      }
+      
+      &:focus {
+        outline: none;
+        border-color: #000;
+      }
+    }
+    
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+  }
+  
+  .phoneInputWrapper {
+    display: flex;
+    align-items: center;
+    
+    .countryCode {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      height: 100%;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    input {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  
+  .bookingDetailsColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bookingSummaryCard {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    
+    .serviceName {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .dateTime {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #666;
+    }
+    
+    .staffMember {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #4a90e2;
+    }
+    
+    .duration {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+  
+  .paymentSection {
+    margin-bottom: 2rem;
+    
+    .sectionTitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .serviceType {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+  
+  .consentSection {
+    margin-bottom: 2rem;
+    
+    .consentText {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  }
+  
+  .bookNowButton {
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    
+    &:hover {
+      background-color: #3a7bc8;
+    }
+  }
+  
+  .formActions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .backButton {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: #666;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+  }
+  
+  .errorContainer {
+    text-align: center;
+    padding: 4rem 0;
+    
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    
+    .backLink {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+}

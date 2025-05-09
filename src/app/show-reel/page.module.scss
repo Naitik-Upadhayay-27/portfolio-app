@@ -1,0 +1,122 @@
+.showReelPage {
+  padding: 8rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  .videoContainer {
+    margin: 3rem 0;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    
+    .videoPlayer, iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: #000;
+    }
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 2rem auto 4rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .additionalVideos {
+    margin-top: 5rem;
+    
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
+  
+  .videoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: -10rem;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0 1.5rem; /* Add side margins on mobile */
+    }
+  }
+  
+  .videoItem {
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease;
+    
+    @media (max-width: 768px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    
+    &:hover {
+      transform: translateY(-5px);
+      
+      .videoPlaceholder img {
+        transform: scale(1.05);
+      }
+    }
+    
+    .videoPlaceholder {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      position: relative;
+      
+      img {
+        transition: transform 0.5s cubic-bezier(0.43, 0.13, 0.23, 0.96);
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+      font-family: 'Times New Roman', serif;
+      letter-spacing: 0.5px;
+    }
+    
+    p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      height: 80px; /* Fixed height for description to ensure alignment */
+      overflow: hidden;
+    }
+    
+    .projectLink {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        color: #666;
+        border-color: #666;
+      }
+    }
+  }
+}
