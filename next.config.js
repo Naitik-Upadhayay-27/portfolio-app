@@ -3,8 +3,14 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['vercel.app'], // Add your Vercel domain here if needed
-    unoptimized: true, // This can help with image loading issues on Vercel
+    domains: ['vercel.app'],
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   webpack: (config) => {
     // Add a rule to handle shader files
@@ -22,8 +28,11 @@ const nextConfig = {
 
     return config;
   },
-  // Ensure assets are properly loaded from the correct base path
-  assetPrefix: process.env.NODE_ENV === 'production' ? '.' : '',
+  // Remove the assetPrefix as it can cause issues with Vercel deployments
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '.' : '',
+  
+  // Add output configuration for static exports
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
