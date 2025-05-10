@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { useImageLoader } from '@/hooks/useImageLoader';
 import { motion, useScroll, useTransform, useInView, useAnimation } from 'framer-motion';
 import { portfolioData } from '@/data/data';
 import styles from './page.module.scss';
@@ -177,8 +176,8 @@ export default function Home() {
       <section ref={portfolioGridRef} className={styles.portfolioGrid}>
         <div className={styles.maxWidthContainer}>
           {portfolio.projects.map((project, index) => {
-            // Use the image loader hook to ensure proper image loading
-            const imageSrc = useImageLoader(project.image);
+            // Use the image path directly from the project data
+            const imageSrc = project.image;
             return (
               <motion.div 
                 key={project.id}

@@ -1,22 +1,12 @@
 'use client';
 
 import React from 'react';
-import { useImageLoader } from '@/hooks/useImageLoader';
 import { motion } from 'framer-motion';
 import { portfolioData } from '@/data/data';
 import styles from './page.module.scss';
 
 const ShowReelPage = () => {
   const { showreel } = portfolioData;
-  
-  // Use the image loader hook for all images
-  const img1Src = useImageLoader('/img1.jpg');
-  const img2Src = useImageLoader('/img2.jpg');
-  const img3Src = useImageLoader('/img3.jpg');
-  const img4Src = useImageLoader('/img4.jpg');
-  const img5Src = useImageLoader('/img5.jpg');
-  const imggSrc = useImageLoader('/imgg.jpg');
-  const videoSrc = useImageLoader(showreel.videoUrl);
 
   return (
     <div className={styles.showReelPage}>
@@ -37,10 +27,10 @@ const ShowReelPage = () => {
       >
         <div className={styles.videoWrapper}>
           <video
-            src={videoSrc}
+            src={showreel.videoUrl}
             title="Show Reel"
             controls
-            poster={img1Src}
+            poster="https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg"
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -72,7 +62,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={img1Src}
+                src="https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg"
                 alt="Echoes of Heritage"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -92,7 +82,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={img2Src}
+                src="https://images.unsplash.com/photo-1613336026275-d6d473084e85"
                 alt="Aurora Tech"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -112,7 +102,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={img3Src}
+                src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3"
                 alt="In Bloom"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -132,7 +122,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={img4Src}
+                src="https://images.unsplash.com/photo-1536240478700-b869070f9279"
                 alt="Café Noir"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -152,7 +142,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={img5Src}
+                src="https://images.unsplash.com/photo-1605812276723-c31bb1a68a21"
                 alt="Mythos"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -172,7 +162,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src={imggSrc}
+                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6a3"
                 alt="Neon Drift"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
