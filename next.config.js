@@ -13,9 +13,10 @@ const nextConfig = {
     ],
     dangerouslyAllowSVG: true,
     path: '',
+    loader: 'default',
   },
   // Ensure static assets are properly handled
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/' : '',
+  assetPrefix: '',
   webpack: (config) => {
     // Add a rule to handle shader files
     config.module.rules.push({

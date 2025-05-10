@@ -31,7 +31,7 @@ const ShowReelPage = () => {
             src={showreel.videoUrl}
             title="Show Reel"
             controls
-            poster="/images/img1.jpg"
+            poster="/img1.jpg"
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -63,7 +63,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/img1.jpg"
+                src="/img1.jpg"
                 alt="Echoes of Heritage"
                 width={800}
                 height={500}
@@ -84,7 +84,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/img2.jpg"
+                src="/img2.jpg"
                 alt="Aurora Tech"
                 width={800}
                 height={500}
@@ -105,7 +105,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/img3.jpg"
+                src="/img3.jpg"
                 alt="In Bloom"
                 width={800}
                 height={500}
@@ -126,7 +126,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/img4.jpg"
+                src="/img4.jpg"
                 alt="Café Noir"
                 width={800}
                 height={500}
@@ -147,7 +147,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/img5.jpg"
+                src="/img5.jpg"
                 alt="Mythos"
                 width={800}
                 height={500}
@@ -168,7 +168,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <Image 
-                src="/images/imgg.jpg"
+                src="/imgg.jpg"
                 alt="Neon Drift"
                 width={800}
                 height={500}
