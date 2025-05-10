@@ -6,10 +6,9 @@
   .videoContainer {
     margin: 3rem 0;
   }
-  
   .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     
@@ -34,7 +33,7 @@
   }
   
   .additionalVideos {
-    margin-top: 5rem;
+    margin-top: rem;
     
     h2 {
       font-size: 2rem;
