@@ -194,7 +194,7 @@ export default function Home() {
               >
                   <Link href={project.url}>
                     <div className={styles.projectImageWrapper}>
-                      <div className="relative w-full h-full">
+                      <div style={{ position: 'relative', width: '100%', height: '550px' }}>
                         <Image 
                           src={imageSrc} 
                           alt={project.title} 

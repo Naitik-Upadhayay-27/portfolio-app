@@ -31,7 +31,7 @@ const ShowReelPage = () => {
             src={showreel.videoUrl}
             title="Show Reel"
             controls
-            poster="https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg"
+            poster="/img1.jpg"
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -64,7 +64,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg"
+                  src="/img1.jpg"
                   alt="Echoes of Heritage"
                   fill
                   priority
@@ -88,7 +88,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://images.unsplash.com/photo-1613336026275-d6d473084e85"
+                  src="/img2.jpg"
                   alt="Aurora Tech"
                   fill
                   priority
@@ -112,7 +112,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3"
+                  src="/img3.jpg"
                   alt="In Bloom"
                   fill
                   priority
@@ -136,7 +136,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://images.unsplash.com/photo-1536240478700-b869070f9279"
+                  src="/img4.jpg"
                   alt="Café Noir"
                   fill
                   priority
@@ -160,7 +160,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://images.unsplash.com/photo-1605812276723-c31bb1a68a21"
+                  src="/img5.jpg"
                   alt="Mythos"
                   fill
                   priority
@@ -184,7 +184,7 @@ const ShowReelPage = () => {
             <div className={styles.videoPlaceholder}>
               <div className="relative w-full h-full">
                 <Image 
-                  src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6a3"
+                  src="/imgg.jpg"
                   alt="Neon Drift"
                   fill
                   priority

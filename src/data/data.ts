@@ -26,7 +26,7 @@ export const portfolioData = {
         id: 1,
         title: "Ray of Light",
         category: "MUSIC VIDEO",
-        image: "https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg",
+        image: "/img1.jpg",
         description: "Music video direction for emerging artist",
         url: "/portfolio/ray-of-light"
       },
@@ -34,7 +34,7 @@ export const portfolioData = {
         id: 2,
         title: "Rick Landry / Roots",
         category: "COMMERCIAL",
-        image: "https://images.unsplash.com/photo-1613336026275-d6d473084e85",
+        image: "/img2.jpg",
         description: "Brand campaign for fashion label",
         url: "/portfolio/rick-landry-roots"
       },
@@ -42,7 +42,7 @@ export const portfolioData = {
         id: 3,
         title: "Reflections",
         category: "SHORT FILM",
-        image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3",
+        image: "/img3.jpg",
         description: "Award-winning short film",
         url: "/portfolio/reflections"
       },
@@ -50,7 +50,7 @@ export const portfolioData = {
         id: 4,
         title: "Thunder Storm",
         category: "MUSIC VIDEO",
-        image: "https://images.unsplash.com/photo-1536240478700-b869070f9279",
+        image: "/img4.jpg",
         description: "Visual storytelling for rock band",
         url: "/portfolio/thunder-storm"
       },
@@ -58,7 +58,7 @@ export const portfolioData = {
         id: 5,
         title: "Hounds of Love",
         category: "COMMERCIAL",
-        image: "https://images.unsplash.com/photo-1605812276723-c31bb1a68a21",
+        image: "/img5.jpg",
         description: "Luxury brand campaign",
         url: "/portfolio/hounds-of-love"
       },
@@ -66,7 +66,7 @@ export const portfolioData = {
         id: 6,
         title: "A New World",
         category: "SHORT FILM",
-        image: "https://images.unsplash.com/photo-1603380353725-f8a4d39cc41e",
+        image: "/img.jpg",
         description: "Sci-fi short film",
         url: "/portfolio/a-new-world"
       },
@@ -74,7 +74,7 @@ export const portfolioData = {
         id: 7,
         title: "The Chicks / Drive",
         category: "MUSIC VIDEO",
-        image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6a3",
+        image: "/imgg.jpg",
         description: "Music video for The Chicks",
         url: "/portfolio/the-chicks-drive"
       },
@@ -84,7 +84,7 @@ export const portfolioData = {
   // About Section
   about: {
     title: "ABOUT",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+    image: "/main.webp",
     bio: "I am a creative director and filmmaker with over 15 years of experience in the industry. My work spans music videos, commercials, and short films, with a focus on visual storytelling and innovative direction. I've collaborated with major brands and artists to create compelling visual narratives that resonate with audiences worldwide.",
     stats: [
       { label: "Years Experience", value: "15+" },
@@ -138,7 +138,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Initial creative consultation for TV commercial projects. We'll discuss your vision, target audience, and creative direction.",
-        image: "https://i.pinimg.com/originals/9d/44/75/9d44754c4da6e9ee1eff104b38095e4c.jpg"
+        image: "/img1.jpg"
       },
       { 
         id: "fashion-video",
@@ -146,7 +146,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Consultation for fashion video projects. We'll explore visual aesthetics, styling, and narrative approach for your brand.",
-        image: "https://images.unsplash.com/photo-1613336026275-d6d473084e85"
+        image: "/img2.jpg"
       },
       { 
         id: "music-video",
@@ -154,7 +154,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Creative session for music video concepts. We'll discuss visual storytelling that complements your music and artist image.",
-        image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3"
+        image: "/img3.jpg"
       },
     ],
   },
@@ -162,7 +162,7 @@ export const portfolioData = {
   // Show Reel Section
   showreel: {
     title: "SHOW REEL",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-fashion-model-with-a-cold-and-distant-gaze-39892-large.mp4", // Local video file
+    videoUrl: "/video.mp4", // Local video file from public folder
     description: "A selection of my recent directorial work across various mediums.",
   },
 
