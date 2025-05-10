@@ -21,6 +21,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         src={src}
         alt={alt}
         fill
+        sizes="(max-width: 768px) 100vw, 50vw"
         style={{ objectFit: 'cover' }}
         priority={priority}
       />

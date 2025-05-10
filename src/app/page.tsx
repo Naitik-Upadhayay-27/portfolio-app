@@ -200,6 +200,7 @@ export default function Home() {
                           alt={project.title} 
                           fill
                           priority={index < 2}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           style={{ objectFit: 'cover' }}
                         />
                       </div>

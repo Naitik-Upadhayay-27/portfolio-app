@@ -68,6 +68,7 @@ const ShowReelPage = () => {
                   alt="Echoes of Heritage"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>
@@ -91,6 +92,7 @@ const ShowReelPage = () => {
                   alt="Aurora Tech"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>
@@ -114,6 +116,7 @@ const ShowReelPage = () => {
                   alt="In Bloom"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>
@@ -137,6 +140,7 @@ const ShowReelPage = () => {
                   alt="Café Noir"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>
@@ -160,6 +164,7 @@ const ShowReelPage = () => {
                   alt="Mythos"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>
@@ -183,6 +188,7 @@ const ShowReelPage = () => {
                   alt="Neon Drift"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 />
               </div>

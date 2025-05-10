@@ -94,6 +94,7 @@ const AboutPage = () => {
               alt="Adam Scharf"
               width={1200}
               height={1600}
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               priority
             />
