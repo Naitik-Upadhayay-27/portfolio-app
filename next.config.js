@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['vercel.app'],
-    formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,11 +12,14 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
-    minimumCacheTTL: 60,
-    disableStaticImages: false,
   },
   // Ensure static assets are properly handled
   assetPrefix: '',
+  // Disable static asset optimization to ensure proper loading
+  experimental: {
+    optimizeImages: false,
+    optimizeCss: false,
+  },
   webpack: (config) => {
     // Add a rule to handle shader files
     config.module.rules.push({
