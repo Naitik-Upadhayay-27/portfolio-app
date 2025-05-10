@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
+  // Removed output: 'export' to support dynamic routes
 };
 
 module.exports = nextConfig;
