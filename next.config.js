@@ -11,6 +11,7 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    dangerouslyAllowSVG: true,
   },
   webpack: (config) => {
     // Add a rule to handle shader files
