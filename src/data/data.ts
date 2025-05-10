@@ -84,7 +84,7 @@ export const portfolioData = {
   // About Section
   about: {
     title: "ABOUT",
-    image: "/main.webp",
+    image: "/NYC.jpg",
     bio: "I am a creative director and filmmaker with over 15 years of experience in the industry. My work spans music videos, commercials, and short films, with a focus on visual storytelling and innovative direction. I've collaborated with major brands and artists to create compelling visual narratives that resonate with audiences worldwide.",
     stats: [
       { label: "Years Experience", value: "15+" },
