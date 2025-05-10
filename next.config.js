@@ -2,12 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Simplify configuration to basic settings
   images: {
     unoptimized: true,
   },
-  // Use a public URL prefix for static assets
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://portfolio-app-naitik-upadhayay-27.vercel.app' : '',
   webpack: (config) => {
     // Add a rule to handle shader files
     config.module.rules.push({

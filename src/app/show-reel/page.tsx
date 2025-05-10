@@ -30,7 +30,7 @@ const ShowReelPage = () => {
             src={showreel.videoUrl}
             title="Show Reel"
             controls
-            poster="https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg"
+            poster="/img1.jpg"
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -62,7 +62,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg"
+                src="/img1.jpg"
                 alt="Echoes of Heritage"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -82,7 +82,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img2.jpg"
+                src="/img2.jpg"
                 alt="Aurora Tech"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -102,7 +102,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img3.jpg"
+                src="/img3.jpg"
                 alt="In Bloom"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -122,7 +122,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img4.jpg"
+                src="/img4.jpg"
                 alt="Café Noir"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -142,7 +142,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img5.jpg"
+                src="/img5.jpg"
                 alt="Mythos"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -162,7 +162,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/imgg.jpg"
+                src="/imgg.jpg"
                 alt="Neon Drift"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
