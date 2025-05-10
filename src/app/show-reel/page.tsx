@@ -68,6 +68,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Echoes of Heritage – Cultural Festival Branding</h3>
@@ -89,6 +91,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Aurora Tech – Futuristic Product Launch Campaign</h3>
@@ -110,6 +114,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                loading="eager"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>In Bloom – Sustainable Fashion Campaign</h3>
@@ -131,6 +137,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                loading="eager"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Café Noir – Boutique Coffee Packaging & Brand Design</h3>
@@ -152,6 +160,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                loading="eager"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Mythos – Motion Graphics for Streaming Series</h3>
@@ -173,6 +183,8 @@ const ShowReelPage = () => {
                 width={800}
                 height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                loading="eager"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Neon Drift – Music Video Visual Art Direction</h3>

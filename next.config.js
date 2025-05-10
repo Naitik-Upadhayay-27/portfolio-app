@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['vercel.app'],
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,8 +12,8 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
-    path: '',
-    loader: 'default',
+    minimumCacheTTL: 60,
+    disableStaticImages: false,
   },
   // Ensure static assets are properly handled
   assetPrefix: '',

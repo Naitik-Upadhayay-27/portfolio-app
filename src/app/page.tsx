@@ -201,6 +201,8 @@ export default function Home() {
                         height={800}
                         style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                         priority={index < 2}
+                        loading={index < 4 ? 'eager' : 'lazy'}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       <motion.div 
                         className={styles.projectOverlay}
