@@ -1,12 +1,22 @@
 'use client';
 
 import React from 'react';
+import { useImageLoader } from '@/hooks/useImageLoader';
 import { motion } from 'framer-motion';
 import { portfolioData } from '@/data/data';
 import styles from './page.module.scss';
 
 const ShowReelPage = () => {
   const { showreel } = portfolioData;
+  
+  // Use the image loader hook for all images
+  const img1Src = useImageLoader('/img1.jpg');
+  const img2Src = useImageLoader('/img2.jpg');
+  const img3Src = useImageLoader('/img3.jpg');
+  const img4Src = useImageLoader('/img4.jpg');
+  const img5Src = useImageLoader('/img5.jpg');
+  const imggSrc = useImageLoader('/imgg.jpg');
+  const videoSrc = useImageLoader(showreel.videoUrl);
 
   return (
     <div className={styles.showReelPage}>
@@ -27,10 +37,10 @@ const ShowReelPage = () => {
       >
         <div className={styles.videoWrapper}>
           <video
-            src={showreel.videoUrl}
+            src={videoSrc}
             title="Show Reel"
             controls
-            poster="/img1.jpg"
+            poster={img1Src}
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -62,7 +72,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/img1.jpg"
+                src={img1Src}
                 alt="Echoes of Heritage"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -82,7 +92,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/img2.jpg"
+                src={img2Src}
                 alt="Aurora Tech"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -102,7 +112,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/img3.jpg"
+                src={img3Src}
                 alt="In Bloom"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -122,7 +132,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/img4.jpg"
+                src={img4Src}
                 alt="Café Noir"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -142,7 +152,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/img5.jpg"
+                src={img5Src}
                 alt="Mythos"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
@@ -162,7 +172,7 @@ const ShowReelPage = () => {
           >
             <div className={styles.videoPlaceholder}>
               <img 
-                src="/imgg.jpg"
+                src={imggSrc}
                 alt="Neon Drift"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
