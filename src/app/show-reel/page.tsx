@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { portfolioData } from '@/data/data';
 import styles from './page.module.scss';
@@ -31,7 +30,7 @@ const ShowReelPage = () => {
             src={showreel.videoUrl}
             title="Show Reel"
             controls
-            poster="/img1.jpg"
+            poster="https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg"
             className={styles.videoPlayer}
           ></video>
         </div>
@@ -62,14 +61,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/img1.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg"
                 alt="Echoes of Heritage"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="eager"
               />
             </div>
             <h3>Echoes of Heritage – Cultural Festival Branding</h3>
@@ -85,14 +81,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/img2.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img2.jpg"
                 alt="Aurora Tech"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="eager"
               />
             </div>
             <h3>Aurora Tech – Futuristic Product Launch Campaign</h3>
@@ -108,14 +101,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/img3.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img3.jpg"
                 alt="In Bloom"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>In Bloom – Sustainable Fashion Campaign</h3>
@@ -131,14 +121,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/img4.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img4.jpg"
                 alt="Café Noir"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Café Noir – Boutique Coffee Packaging & Brand Design</h3>
@@ -154,14 +141,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/img5.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/img5.jpg"
                 alt="Mythos"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Mythos – Motion Graphics for Streaming Series</h3>
@@ -177,14 +161,11 @@ const ShowReelPage = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <div className={styles.videoPlaceholder}>
-              <Image 
-                src="/imgg.jpg"
+              <img 
+                src="https://portfolio-app-naitik-upadhayay-27.vercel.app/imgg.jpg"
                 alt="Neon Drift"
-                width={800}
-                height={500}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 loading="eager"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3>Neon Drift – Music Video Visual Art Direction</h3>

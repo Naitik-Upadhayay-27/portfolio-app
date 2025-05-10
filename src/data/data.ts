@@ -26,7 +26,7 @@ export const portfolioData = {
         id: 1,
         title: "Ray of Light",
         category: "MUSIC VIDEO",
-        image: "/img1.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg",
         description: "Music video direction for emerging artist",
         url: "/portfolio/ray-of-light"
       },
@@ -34,7 +34,7 @@ export const portfolioData = {
         id: 2,
         title: "Rick Landry / Roots",
         category: "COMMERCIAL",
-        image: "/img2.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img2.jpg",
         description: "Brand campaign for fashion label",
         url: "/portfolio/rick-landry-roots"
       },
@@ -42,7 +42,7 @@ export const portfolioData = {
         id: 3,
         title: "Reflections",
         category: "SHORT FILM",
-        image: "/img3.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img3.jpg",
         description: "Award-winning short film",
         url: "/portfolio/reflections"
       },
@@ -50,7 +50,7 @@ export const portfolioData = {
         id: 4,
         title: "Thunder Storm",
         category: "MUSIC VIDEO",
-        image: "/img4.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img4.jpg",
         description: "Visual storytelling for rock band",
         url: "/portfolio/thunder-storm"
       },
@@ -58,7 +58,7 @@ export const portfolioData = {
         id: 5,
         title: "Hounds of Love",
         category: "COMMERCIAL",
-        image: "/img5.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img5.jpg",
         description: "Luxury brand campaign",
         url: "/portfolio/hounds-of-love"
       },
@@ -66,7 +66,7 @@ export const portfolioData = {
         id: 6,
         title: "A New World",
         category: "SHORT FILM",
-        image: "/img.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img.jpg",
         description: "Sci-fi short film",
         url: "/portfolio/a-new-world"
       },
@@ -74,7 +74,7 @@ export const portfolioData = {
         id: 7,
         title: "The Chicks / Drive",
         category: "MUSIC VIDEO",
-        image: "/imgg.jpg",
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/imgg.jpg",
         description: "Music video for The Chicks",
         url: "/portfolio/the-chicks-drive"
       },
@@ -84,7 +84,7 @@ export const portfolioData = {
   // About Section
   about: {
     title: "ABOUT",
-    image: "/NYC.jpg",
+    image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/NYC.jpg",
     bio: "I am a creative director and filmmaker with over 15 years of experience in the industry. My work spans music videos, commercials, and short films, with a focus on visual storytelling and innovative direction. I've collaborated with major brands and artists to create compelling visual narratives that resonate with audiences worldwide.",
     stats: [
       { label: "Years Experience", value: "15+" },
@@ -138,7 +138,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Initial creative consultation for TV commercial projects. We'll discuss your vision, target audience, and creative direction.",
-        image: "/img1.jpg"
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img1.jpg"
       },
       { 
         id: "fashion-video",
@@ -146,7 +146,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Consultation for fashion video projects. We'll explore visual aesthetics, styling, and narrative approach for your brand.",
-        image: "/img2.jpg"
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img2.jpg"
       },
       { 
         id: "music-video",
@@ -154,7 +154,7 @@ export const portfolioData = {
         duration: "1 hr", 
         type: "Creative Meeting",
         description: "Creative session for music video concepts. We'll discuss visual storytelling that complements your music and artist image.",
-        image: "/img3.jpg"
+        image: "https://portfolio-app-naitik-upadhayay-27.vercel.app/img3.jpg"
       },
     ],
   },
@@ -162,7 +162,7 @@ export const portfolioData = {
   // Show Reel Section
   showreel: {
     title: "SHOW REEL",
-    videoUrl: "/video.mp4", // Local video file
+    videoUrl: "https://portfolio-app-naitik-upadhayay-27.vercel.app/video.mp4", // Local video file
     description: "A selection of my recent directorial work across various mediums.",
   },
 

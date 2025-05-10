@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, useScroll, useTransform, useInView, useAnimation } from 'framer-motion';
 import { portfolioData } from '@/data/data';
 import styles from './page.module.scss';
@@ -194,15 +193,11 @@ export default function Home() {
               >
                   <Link href={project.url}>
                     <div className={styles.projectImageWrapper}>
-                      <Image 
+                      <img 
                         src={imageSrc}
                         alt={project.title}
-                        width={1200}
-                        height={800}
                         style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-                        priority={index < 2}
                         loading={index < 4 ? 'eager' : 'lazy'}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       <motion.div 
                         className={styles.projectOverlay}
